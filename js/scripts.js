@@ -52,3 +52,46 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+/*  COTIZA TU AUTO */
+
+
+
+
+class Producto {
+    constructor(id, marca, modelo, año, precio, categoria, imagen) {
+      this.id = id;
+      this.marca = marca;
+      this.modelo = modelo;
+      this.año = año;
+      this.precio = precio;
+      this.categoria = categoria;
+      this.imagen = imagen;
+    }
+  }
+  
+  const producto1 = new Producto(1, 'VolksWagen', 'Golf', 2015, 300, 'deportivo', 'https://via.placeholder.com/150');
+  const producto2 = new Producto(2, 'Porsche', '911', 2020, 700, 'deportivo', 'https://via.placeholder.com/150');
+  const producto3 = new Producto(3, 'Porsche', '718 Cayman', 2020, 800, 'deportivo', 'https://via.placeholder.com/150');
+  const producto4 = new Producto(4, 'BMW', 'X1', 2020, 500, 'camioneta', 'https://via.placeholder.com/150');
+  const producto5 = new Producto(5, 'BMW', 'X6', 2020, 500, 'camioneta', 'https://via.placeholder.com/150');
+  const producto6 = new Producto(6, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  const producto7 = new Producto(7, 'Mercedes', 'AMG C 63 S', 2021, 800, 'deportivo', 'https://via.placeholder.com/150');
+  const producto8 = new Producto(8, 'BMW', 'MS Competition', 2017, 700, 'deportivo', 'https://via.placeholder.com/150');
+  const producto9 = new Producto(9, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  const producto10 = new Producto(10, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  const producto11 = new Producto(11, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  const producto12 = new Producto(12, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  const producto13 = new Producto(13, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  const producto14 = new Producto(14, 'BMW', 'X3', 2017, 450, 'camioneta', 'https://via.placeholder.com/150');
+  
+  const listaProductos = [producto1, producto2, producto3, producto4, producto5, producto6, producto7, producto8, producto9, producto10, producto11, producto12, producto13, producto14];
+  
+  function filtrarProductos() {
+    const valorFiltro = document.getElementById('filtro-precio').valueAsNumber;
+    const productosFiltrados = listaProductos.filter(producto => producto.precio > valorFiltro);
+    const productosContainer = document.getElementById('productos-container');
+      
+    productosContainer.innerHTML = '';
+    productosFiltrados.forEach
+  }
