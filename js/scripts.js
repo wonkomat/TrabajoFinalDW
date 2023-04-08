@@ -89,9 +89,28 @@ class Producto {
   
   function filtrarProductos() {
     const valorFiltro = document.getElementById('filtro-precio').valueAsNumber;
-    const productosFiltrados = listaProductos.filter(producto => producto.precio > valorFiltro);
+    const productosFiltrados = listaProductos.filter(producto => producto.precio >= valorFiltro);
     const productosContainer = document.getElementById('productos-container');
       
     productosContainer.innerHTML = '';
-    productosFiltrados.forEach
+    
+  if (productosFiltrados.length === 0) {
+    productosContainer.innerHTML = '<p>No se encontraron resultados para el monto especificado.</p>';
+  } else {
+    productosFiltrados.forEach(producto => {
+      const productoHTML = `
+        <div class="producto">
+          <img src="${producto.imagen}" alt="${producto.modelo}">
+          <h3>${producto.marca} ${producto.modelo}</h3>
+          <p>Año: ${producto.año}</p>
+          <p>Precio: $${producto.precio}</p>
+          <p>Categoría: ${producto.categoria}</p>
+        </div>
+      `;
+      productosContainer.innerHTML += productoHTML;
+    });
   }
+}
+  
+
+  
