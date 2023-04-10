@@ -18,9 +18,6 @@
         integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Incluye la biblioteca jsPDF -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    
 </head>
 
 <body id="page-top">
@@ -91,7 +88,7 @@
     </section>
     <!-- Cotizacion  -->
     <section class="page-section" id="cotiza">
-        <div class="container">
+        <div class="container cotiza">
             <div class="text-center">
                 <h2 class="section-heading text-uppercase">Cotiza</h2>
                 <h3 class="section-subheading text-muted"></h3>
@@ -104,7 +101,7 @@
                     <h4 class="my-3">Cotiza con nosotros en solo un instante</h4>
                     <p class="text-muted"></p>
                 </div>
-                <div>
+                <div class="input-cotiza">
                     <label for="filtro-precio">Con cuanto dinero cuentas?:</label>
                     <input type="number" id="filtro-precio" inputmode="numeric" />
                     <br>
@@ -315,13 +312,13 @@
                 <div class="col-lg-4">
                     <div class="team-member">
                         <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="..." />
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Seller</p>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i
-                                class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i
+                        <h4>Sebastian Mendoza</h4>
+                        <p class="text-muted">Vendedor</p>
+                        <a class="btn btn-dark btn-social mx-2" target="_blank" href="https://github.com/sebamendo" aria-label="Sebastian Mendoza GitHub Profile"><i
+                                class="fab fa-github"></i></a>
+                        <a class="btn btn-dark btn-social mx-2" target="_blank" href="#!" aria-label="Sebastian Mendoza Facebook Profile"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i
+                        <a class="btn btn-dark btn-social mx-2" target="_blank" href="https://www.linkedin.com/in/sebastian-mendoza-45625a221/" aria-label="Sebastian Mendoza LinkedIn Profile"><i
                                 class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
@@ -333,6 +330,7 @@
                 </div>
             </div>
         </div>
+        
     </section>
     <!-- Contact-->
     <section class="page-section" id="contact">
@@ -435,6 +433,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
+    <!-- Incluye la biblioteca jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <!-- * *                               SB Forms JS                               * *-->
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->

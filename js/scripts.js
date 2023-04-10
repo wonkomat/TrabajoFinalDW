@@ -109,10 +109,10 @@ function filtrarProductos() {
 
 function generatePDF() {
   // Obtén los datos del formulario
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var phone = document.getElementById('phone').value;
-  var message = document.getElementById('message').value;
+  var nombre = document.getElementById('name').value;
+  var correo = document.getElementById('email').value;
+  var telefono = document.getElementById('phone').value;
+  var mensaje = document.getElementById('message').value;
   // ... Obtén otros campos del formulario ...
 
   // Crea una nueva instancia de jsPDF
@@ -120,10 +120,10 @@ function generatePDF() {
 
   // Agrega contenido al PDF
   doc.text(10, 20, 'Datos del formulario:');
-  doc.text(10, 30, 'Nombre: ' + name);
-  doc.text(10, 40, 'Email: ' + email);
-  doc.text(10, 50, 'Telefono: ' + phone);
-  doc.text(10, 60, 'Mensaje: ' + message);
+  doc.text(10, 30, 'Nombre: ' + nombre);
+  doc.text(10, 40, 'Email: ' + correo);
+  doc.text(10, 50, 'Telefono: ' + telefono);
+  doc.text(10, 60, 'Mensaje: ' + mensaje);
   // ... Agrega otros campos del formulario ...
 
   // Guarda el PDF como archivo para descarga

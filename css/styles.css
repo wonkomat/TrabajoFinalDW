@@ -13171,12 +13171,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 
 /* ESTILOS CARUSEL */
-:root{
-  --bs-yellow: #ffc800;
-  --bs-primary: #ffc800;
-  --bs-body-font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
-}
-
 .page-section#gallery{
   width: 80vw;
   margin: auto;
@@ -13198,10 +13192,9 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .carousel-item img{
   width: 100%;
-  height: auto;
 }
 .carousel-inner{
-height: 800px;
+height: 100%;
 }
 
 .carousel-control-prev .carousel-control-prev-icon,
@@ -13226,11 +13219,32 @@ height: 800px;
 /* ESTILOS CARUSEL */
 
 /* ESTILO COTIZACION */
-
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.container.cotiza{
+  width: 100%;
+}
+
+.container.cotiza .col-md-4{
+  width: 100%;
+  text-align: center;
+  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+.container.cotiza .input-cotiza{
+  width: 100%;
+  text-align: center;
+}
+
+
+.container.cotiza .input-cotiza button{
+  width: 130px;
+  height: 50px;
+  margin-top: 30px;
 }
 
 #productos-container {
@@ -13252,6 +13266,6 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #productos-container .producto p{
   text-align: center;
-  font-family: Roboto Slab, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* ESTILO COTIZACION */
