@@ -13256,6 +13256,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 #productos-container img{
   width: 200px;
+  height: 150px;
 }
 
 #productos-container .producto h3{
@@ -13269,3 +13270,11 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 /* ESTILO COTIZACION */
+
+/* ESTILO SECCION INSTAGRAM */
+.page-section .container .inst{
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
