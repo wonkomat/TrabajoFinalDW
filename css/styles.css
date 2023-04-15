@@ -12597,7 +12597,7 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 3rem 0;
 }
 
 .page-section h2.section-heading,
@@ -12697,8 +12697,8 @@ p {
   }
 
   #mainNav.navbar-shrink {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     background-color: #212529;
   }
 
@@ -13269,6 +13269,14 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.icono-cotizar {
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+  
+}
+
 /* ESTILO COTIZACION */
 
 /* ESTILO SECCION INSTAGRAM */
@@ -13277,4 +13285,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: auto;
   align-items: center;
   justify-content: center;
+  box-shadow: 0px 5px 15px rgb(0, 0, 0, 0.25);
+  border: 7px solid #e9ecef;
+  border-radius: 1rem;
 }
