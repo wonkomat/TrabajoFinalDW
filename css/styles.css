@@ -13274,9 +13274,13 @@ input[type="number"]::-webkit-outer-spin-button {
   margin-top: -2rem;
   margin-bottom: 2rem;
   font-size: 5rem;
-  
 }
 
+.producto:hover{
+  transform: scale(1.1);
+  transition: .4s;
+  cursor: pointer;
+}
 /* ESTILO COTIZACION */
 
 /* ESTILO SECCION INSTAGRAM */
@@ -13289,3 +13293,4 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 7px solid #e9ecef;
   border-radius: 1rem;
 }
+/* ESTILO SECCION INSTAGRAM */
